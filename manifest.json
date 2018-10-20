@@ -1,0 +1,26 @@
+{
+	"files": {
+		"Glyphs/Archer/Example.json": "d802f19ae1a4c6d4fdeb42b761fd9e78db2067bd907fc68d2ec5a4ec3f31548d",
+		"Glyphs/Berserker/Example.json": "d802f19ae1a4c6d4fdeb42b761fd9e78db2067bd907fc68d2ec5a4ec3f31548d",
+		"Glyphs/Brawler/Example.json": "d802f19ae1a4c6d4fdeb42b761fd9e78db2067bd907fc68d2ec5a4ec3f31548d",
+		"Glyphs/Gunner/Example.json": "d802f19ae1a4c6d4fdeb42b761fd9e78db2067bd907fc68d2ec5a4ec3f31548d",
+		"Glyphs/Lancer/Example.json": "d802f19ae1a4c6d4fdeb42b761fd9e78db2067bd907fc68d2ec5a4ec3f31548d",
+		"Glyphs/Mystic/Example.json": "d802f19ae1a4c6d4fdeb42b761fd9e78db2067bd907fc68d2ec5a4ec3f31548d",
+		"Glyphs/Ninja/Example.json": "d802f19ae1a4c6d4fdeb42b761fd9e78db2067bd907fc68d2ec5a4ec3f31548d",
+		"Glyphs/Priest/Example.json": "d802f19ae1a4c6d4fdeb42b761fd9e78db2067bd907fc68d2ec5a4ec3f31548d",
+		"Glyphs/Reaper/Example.json": "d802f19ae1a4c6d4fdeb42b761fd9e78db2067bd907fc68d2ec5a4ec3f31548d",
+		"Glyphs/Slayer/Example.json": "d802f19ae1a4c6d4fdeb42b761fd9e78db2067bd907fc68d2ec5a4ec3f31548d",
+		"Glyphs/Sorcerer/Example.json": "d802f19ae1a4c6d4fdeb42b761fd9e78db2067bd907fc68d2ec5a4ec3f31548d",
+		"Glyphs/Valkyrie/Example.json": "d802f19ae1a4c6d4fdeb42b761fd9e78db2067bd907fc68d2ec5a4ec3f31548d",
+		"Glyphs/Warrior/Example.json": "d802f19ae1a4c6d4fdeb42b761fd9e78db2067bd907fc68d2ec5a4ec3f31548d",
+		"README.md": "91fc4c0e3ed2a706e3fbc9c609b16e27edae0deee261f149a389a2e053effbaf",
+		"index.js": "0fe4abc67eb4de55731a80c74c99756041154fe8bf6ccddcbe6dfb9e4fe858ea",
+		"module.json": "d112df5539b4f77017e28b48dda0209bc4bb074d31c8c59f17d7a459da1b4a49"
+	},
+	"defs": {
+		"C_CREST_APPLY_LIST": 1,
+		"S_CREST_APPLY": 2,
+		"S_CREST_INFO": 2,
+		"S_LOGIN": 10
+	}
+}

@@ -1,4 +1,5 @@
-I'm not the author it's for saving purpose and auto update feature
+**Original Author : https://github.com/Minecwaft
+supports auto update feature
 
 # Glyphs
 

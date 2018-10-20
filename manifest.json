@@ -13,9 +13,9 @@
 		"Glyphs/Sorcerer/Example.json": "d802f19ae1a4c6d4fdeb42b761fd9e78db2067bd907fc68d2ec5a4ec3f31548d",
 		"Glyphs/Valkyrie/Example.json": "d802f19ae1a4c6d4fdeb42b761fd9e78db2067bd907fc68d2ec5a4ec3f31548d",
 		"Glyphs/Warrior/Example.json": "d802f19ae1a4c6d4fdeb42b761fd9e78db2067bd907fc68d2ec5a4ec3f31548d",
-		"README.md": "91fc4c0e3ed2a706e3fbc9c609b16e27edae0deee261f149a389a2e053effbaf",
+		"README.md": "fd1525ae23783b327b8fe9a223b8f54cefa6d28ff03b4248e3b849dc1db02510",
 		"index.js": "0fe4abc67eb4de55731a80c74c99756041154fe8bf6ccddcbe6dfb9e4fe858ea",
-		"module.json": "d112df5539b4f77017e28b48dda0209bc4bb074d31c8c59f17d7a459da1b4a49"
+		"module.json": "e2c195e21e61900c7c47bd1992ba32381bd9f5a24adfb335d55b1075e4114504"
 	},
 	"defs": {
 		"C_CREST_APPLY_LIST": 1,

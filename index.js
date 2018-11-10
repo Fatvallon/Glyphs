@@ -1,9 +1,7 @@
-const Command = require('command')
 const fs = require('fs')
 const path = require('path')
 
 module.exports = function glyphs(dispatch) {
-  const command = Command(dispatch);
 
   let glyphBuf = {unk: false, glyphs: []};
   let cache;
@@ -34,55 +32,55 @@ module.exports = function glyphs(dispatch) {
     job = (event.templateId - 10101) % 100;
   });
 
-  command.add('glyph', (cmd, arg1) => {
+  dispatch.command.add('glyph', (cmd, arg1) => {
     switch(cmd){
       case 'save':
         fs.writeFile(path.join(__dirname, 'Glyphs', jobs[job], arg1+".json"), (JSON.stringify(glyphBuf, null, 4)), err => {
           if(err) {
-            command.message('Glyph: Glyph folder not found.');
+            dispatch.command.message('Glyph: Glyph folder not found.');
             console.error(err);
             return;
           }
-          command.message('Glyph: ' + arg1 + ' saved.');
+          dispatch.command.message('Glyph: ' + arg1 + ' saved.');
         });
         return;
       case 'load':
         fs.readFile(path.join(__dirname, 'Glyphs', jobs[job], arg1+".json"), function(err,data){
           if(err){
-            command.message('Glyph: File not found.');
+            dispatch.command.message('Glyph: File not found.');
             console.error(err);
             return;
           }
           cache = JSON.parse(data);
           dispatch.toServer('C_CREST_APPLY_LIST', 1, {unk: cache.unk, glyphs: cache.glyphs});
-          command.message('Glyph: ' + arg1 + ' loaded.');
+          dispatch.command.message('Glyph: ' + arg1 + ' loaded.');
         });
         return;
       case 'list':
         fs.readdir(path.join(__dirname, 'Glyphs', jobs[job]), (err, files) => {
           if(err){
-            command.message('Glyph: Glyph folder not found.');
+            dispatch.command.message('Glyph: Glyph folder not found.');
             console.log(err); 
             return; 
           }
-          command.message(' Glyph List ----');
+          dispatch.command.message(' Glyph List ----');
           for(let i = 0; i < files.length; ++i){
-            command.message(' ' + (i+1) + ': ' + (files[i].slice(0, -5)));
+            dispatch.command.message(' ' + (i+1) + ': ' + (files[i].slice(0, -5)));
           }
         });
         return;
       case 'delete':
       fs.unlink(path.join(__dirname, 'Glyphs', arg1+".json"), err => {
         if(err){
-          command.message('Glyph: File not found.');
+          dispatch.command.message('Glyph: File not found.');
           console.error(err);
           return;
         }
-        command.message('Glyph: ' + arg1 + ' deleted.');
+        dispatch.command.message('Glyph: ' + arg1 + ' deleted.');
       });
       return;
       default: 
-        command.message('Glyph: Unknown Command.');
+        dispatch.command.message('Glyph: Unknown Command.');
         return;
     }
   });
